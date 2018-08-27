@@ -4,7 +4,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get upgrade -y
 
 # Install pre-reqs
-RUN apt-get install -y python curl openssh-server docker
+RUN apt-get install -y python curl openssh-server docker.io
 
 # Setup sshd
 RUN mkdir -p /var/run/sshd
